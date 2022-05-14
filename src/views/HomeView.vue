@@ -16,7 +16,9 @@
       :key="idx"
       class="ml-4 text-2x text-blue-200"
     >
-      {{ pokemon.name }}
+      <router-link :to="`/about/${urlIdLookup[pokemon.name]}`">
+        {{ pokemon.name }}</router-link
+      >
     </div>
   </div>
 </template>
